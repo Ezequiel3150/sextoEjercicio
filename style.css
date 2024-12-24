@@ -1,59 +1,68 @@
+body {
+}
+
 main {
-  background-image: url("Background_image.svg");
-  background-color: #121826;
-  height: 100vh;
-  order: 0;
-  margin: 0;
   justify-items: center;
   color: #e5e7eb;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  font-family: "Outfit"
+  grid-template-rows: auto;
+  font-family: "Outfit";
+  align-items: center;
+  background-image: url("Background_image.svg");
+  background-color: #121826;
 }
-.titulo{
-    justify-items: center;
-    width: 40%;
-    text-align: center;
+.titulo {
+  justify-items: center;
+  width: 40%;
+  text-align: center;
 }
 section {
   display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 0.5fr);
   gap: 5%;
-  margin: 3% 5%;
-  grid-template-columns: repeat(3, 1fr);
 }
 .tarjeta {
-  border: 2px solid black;
   border-radius: 5%;
   background-color: #212936;
   align-items: center;
-  padding: 6%;
-}
-img{
-    width:max-content ;
-}
-p{font-size: 1rem;
-font-weight: 400;}
-h2{font-size: 1.25rem;
-font-weight: 600;}
-h1{font-size: 2.5rem;
-font-weight: 600;}
+  padding: 4%;
 
-.icono-tarjeta1{
-    border-radius: 50%;
-    background-color:#FCEED8 ;
-    justify-self: flex-start;
-    padding: 4%;
+  margin: 15% 0;
 }
-.icono-tarjeta2{
-    border-radius: 50%;
-    background-color:#DEE9FC ;
-    justify-self: flex-start;
-    padding: 4%;
+img {
+  max-width: 100%;
+  border-radius: 10%;
 }
-.icono-tarjeta3{
-    border-radius: 50%;
-    background-color:#FBE5E6 ;
-    justify-self: flex-start;
-    padding: 4%;
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.icono-tarjeta1 {
+  border-radius: 50%;
+  background-color: #fceed8;
+  justify-self: flex-start;
+  padding: 4%;
+}
+.icono-tarjeta2 {
+  border-radius: 50%;
+  background-color: #dee9fc;
+  justify-self: flex-start;
+  padding: 4%;
+}
+.icono-tarjeta3 {
+  border-radius: 50%;
+  background-color: #fbe5e6;
+  justify-self: flex-start;
+  padding: 4%;
 }
